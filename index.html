@@ -33,8 +33,12 @@
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react": "https://esm.sh/react@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "firebase/app": "https://esm.sh/firebase@10.12.2/app",
+    "firebase/auth": "https://esm.sh/firebase@10.12.2/auth",
+    "firebase/firestore": "https://esm.sh/firebase@10.12.2/firestore",
+    "firebase/storage": "https://esm.sh/firebase@10.12.2/storage",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
     "firebase/": "https://aistudiocdn.com/firebase@^12.3.0/"
   }
@@ -46,6 +50,6 @@
   <body class="bg-rose-50 text-slate-800">
     <div id="root"></div>
     <!-- Change script type to text/babel to be processed by Babel -->
-    <script type="text/babel" data-type="module" src="./index.jsx"></script>
+    <script type="text/babel" src="./index.jsx"></script>
   </body>
 </html>
