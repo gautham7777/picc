@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-g" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Diary</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -44,12 +44,16 @@
   }
 }
 </script>
-<!-- Add Babel Standalone for JSX and modern JS transpilation -->
+<!-- Babel for JSX Transpilation -->
 <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
 </head>
   <body class="bg-rose-50 text-slate-800">
     <div id="root"></div>
-    <!-- Change script type to text/babel to be processed by Babel -->
-    <script type="text/babel" src="./index.jsx"></script>
+    <!-- 
+      The 'data-presets' attribute is crucial. It tells Babel to use the React preset
+      to understand and convert JSX syntax into regular JavaScript.
+      The 'type' is 'text/babel' so that Babel can find and process this script.
+    -->
+    <script type="text/babel" data-presets="react" src="./index.jsx"></script>
   </body>
 </html>
