@@ -8,7 +8,7 @@ This is a modern, romantic, and aesthetic couple's diary website designed to be 
 
 ## Technology Stack
 
-- **Frontend:** React, TypeScript, TailwindCSS
+- **Frontend:** React, JSX, TailwindCSS
 - **Backend & Database:** Google Firebase
   - **Authentication:** Firebase Authentication (Email/Password)
   - **Database:** Firestore
@@ -36,13 +36,12 @@ Your app is built to be deployed directly to GitHub Pages without any complex bu
 1.  In your new repository, click the **"Add file"** button and select **"Upload files"**.
 2.  Drag and drop all the project files I've provided into the upload area:
     -   `index.html`
-    -   `index.tsx`
-    -   `App.tsx`
+    -   `index.jsx`
+    -   `App.jsx`
     -   `metadata.json`
-    -   `types.ts`
     -   `README.md` (this file)
-    -   The `components` folder (including all files inside it)
-    -   The `services` folder (including `firebase.ts`)
+    -   The `components` folder (including all `.jsx` files inside it)
+    -   The `services` folder (including `firebase.js`)
 3.  Once all files are uploaded, scroll down and click **"Commit changes"**.
 
 ### Step 3: Configure GitHub Pages
